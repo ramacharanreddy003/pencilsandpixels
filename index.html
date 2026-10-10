@@ -1,0 +1,4146 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Creative portfolio of Ram Charan Reddy — pencil sketches, art, and nature photography."
+        name="description" />
+
+    <title>Charan Reddy | Pencils &amp; Pixels</title>
+    <link rel="icon" type="image/jpeg"
+        href="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791121750/badge_pacifico_rrt2qj.jpg">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        referrerpolicy="no-referrer" rel="stylesheet" />
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 130px;
+        }
+
+        body {
+            margin: 0;
+            background: #f5f5f5;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+            color: #222;
+        }
+
+        body.dark-mode {
+            background: #121212;
+            color: #f5f5f5;
+        }
+
+        /* Navbar */
+        body.dark-mode .navbar {
+            background-color: #1f1f1f;
+        }
+
+        body.dark-mode .navbar a {
+            color: #f5f5f5;
+        }
+
+        body.dark-mode .navbar a:hover {
+            color: white;
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        /* Sections */
+        body.dark-mode section {
+            background-color: #121212;
+        }
+
+        body.dark-mode .natureimages>div {
+            background-color: #1e1e1e;
+        }
+
+        body.dark-mode .natureimages a {
+            color: #ffffff;
+        }
+
+        /* Contact - Dark Mode */
+        body.dark-mode #contact {
+            background-color: #121212;
+            color: #f5f5f5;
+        }
+
+        body.dark-mode #contact h2 {
+            color: #f5f5f5;
+        }
+
+        body.dark-mode #contact p {
+            color: #f5f5f5;
+        }
+
+        /* Keep original Contact icon colors */
+        body.dark-mode #contact .mail {
+            color: #EA4335;
+        }
+
+        body.dark-mode #contact .linkedin {
+            color: #0A66C2;
+        }
+
+        body.dark-mode #contact .github {
+            color: white;
+        }
+
+        body.dark-mode #contact .instagram {
+            color: #E4405F;
+        }
+
+
+        /* Headings */
+        body.dark-mode h1,
+        body.dark-mode h2,
+        body.dark-mode h3,
+        body.dark-mode h4,
+        body.dark-mode h5,
+        body.dark-mode h6 {
+            color: #ffffff;
+        }
+
+        /* Paragraphs */
+        body.dark-mode p {
+            color: #dddddd;
+        }
+
+        /* Gallery cards */
+        body.dark-mode .gallery-card,
+        body.dark-mode .card {
+            background-color: #1e1e1e;
+            color: #ffffff;
+        }
+
+        /* Images container */
+        body.dark-mode .images>div {
+            background-color: #1e1e1e;
+        }
+
+        /* Download links */
+        body.dark-mode .images a {
+            color: #ffffff;
+        }
+
+        /* Footer */
+        body.dark-mode footer {
+            background-color: #0b0b0b;
+            color: #ffffff;
+        }
+
+        /* Dark mode button */
+        #darkModeToggle {
+            border: none;
+            background: #222;
+            color: white;
+            padding: 8px 14px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s ease;
+        }
+
+        #darkModeToggle:hover {
+            background: #444;
+            transform: scale(1.03);
+        }
+
+        /* Dark mode button when website is dark */
+        body.dark-mode #darkModeToggle {
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        body.dark-mode #darkModeToggle:hover {
+            background: #ffffff;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        section {
+            padding: 40px 20px;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        .head1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            min-height: 80px;
+            padding: 10px 15px;
+            background: #222;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-radius: 5px;
+        }
+
+        .head1 .logo {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .head1 h1 {
+            margin: 0;
+            font-size: 32px;
+            line-height: 1.2;
+            font-weight: 700;
+        }
+
+
+        /* =========================
+           NAVBAR
+        ========================= */
+
+        .navbar {
+            background-color: burlywood;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 10px;
+            position: sticky;
+            top: 80px;
+            z-index: 999;
+            border-radius: 5px;
+        }
+
+        .navbar a {
+            color: white;
+            padding: 8px 12px;
+            margin: 2px;
+            font-size: 18px;
+            border-radius: 150px;
+            transition: 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: black;
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+
+        /* =========================
+           SECTION HEADINGS
+        ========================= */
+
+        .heads {
+            border-radius: 5px;
+        }
+
+        .head2 {
+            text-align: center;
+        }
+
+        .head2 h2 {
+            margin-top: 10px;
+        }
+
+
+        /* =========================
+           ABOUT SECTION
+        ========================= */
+
+        .aboutme {
+            text-align: center;
+            padding-top: 25px;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin: auto;
+        }
+
+        .aboutme h2 {
+            margin-bottom: 15px;
+        }
+
+        .aboutme p {
+            font-size: 20px;
+            line-height: 1.7;
+            max-width: 900px;
+            margin: auto;
+
+            text-align: justify;
+            text-justify: inter-word;
+            line-height: 1.75;
+        }
+
+        .profile-photo {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 20px auto;
+            display: block;
+        }
+
+
+        /* =========================
+           GALLERY
+        ========================= */
+
+        .gallery {
+            width: 100%;
+        }
+
+
+        /* =========================
+           ART IMAGES
+        ========================= */
+
+        .images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+            gap: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .images>div {
+            overflow: hidden;
+        }
+
+        .images img {
+            width: 100%;
+            margin-bottom: 12px;
+            border-radius: 12px;
+            box-shadow:
+                0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: 0.3s ease;
+            display: block;
+        }
+
+        .images img:hover {
+            transform: scale(1.03);
+        }
+
+
+        /* =========================
+           DOWNLOAD LINKS
+        ========================= */
+
+        .images a,
+        .natureimages a {
+            display: inline-block;
+            color: #222;
+            font-weight: 500;
+            margin-bottom: 10px;
+            transition: 0.3s ease;
+        }
+
+        .images a:hover,
+        .natureimages a:hover {
+            color: #b8860b;
+        }
+
+
+        /* =========================
+           PHOTOGRAPHY
+        ========================= */
+
+        .natureimages {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+            gap: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .natureimages>div {
+            overflow: hidden;
+        }
+
+        .natureimages img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: 0.3s ease;
+        }
+
+        .natureimages img:hover {
+            transform: scale(1.03);
+        }
+
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        .contact {
+            text-align: center;
+            font-size: 20px;
+
+        }
+
+        .contact h2 {
+            margin-bottom: 20px;
+        }
+
+        .contact a {
+            text-decoration: none;
+            word-break: break-word;
+            line-height: 2;
+        }
+
+        .contact i {
+            margin-right: 8px;
+        }
+
+        .mail {
+            color: #EA4335;
+        }
+
+        .linkedin {
+            color: #0A66C2;
+        }
+
+        .github {
+            color: black;
+        }
+
+        .instagram {
+            color: #E4405F;
+        }
+
+
+        /* =========================
+           THANK YOU
+        ========================= */
+
+        p.thankyou {
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            padding-top: 0;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #222;
+            color: #fff;
+        }
+
+
+        /* =========================
+           FLOATING BUTTONS
+        ========================= */
+
+        .top-float,
+        .bottom-float {
+            position: fixed;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #222;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            transition: 0.3s ease;
+        }
+
+        .top-float {
+            bottom: 440px;
+        }
+
+        .bottom-float {
+            bottom: 20px;
+        }
+
+        /* NEW:
+           Floating buttons are actual buttons,
+           not links to #top or #contact.
+        */
+
+        .top-float button,
+        .bottom-float button {
+            border: none;
+            background: transparent;
+            color: white;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .top-float:hover,
+        .bottom-float:hover {
+            transform: translateY(-4px);
+        }
+
+        .top-float button:hover,
+        .bottom-float button:hover {
+            color: burlywood;
+        }
+
+        /* =========================
+           TABLET
+        ========================= */
+
+        @media (max-width: 1200px) {
+
+            .natureimages {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .images {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+
+        /* =========================
+           MOBILE / TABLET
+        ========================= */
+
+        @media (max-width: 768px) {
+
+            section {
+                padding: 30px 15px;
+            }
+
+            .head1 {
+                min-height: 70px;
+                padding: 10px 12px;
+                gap: 10px;
+            }
+
+            .head1 .logo {
+                width: 52px;
+                height: 52px;
+            }
+
+            .head1 h1 {
+                font-size: 28px;
+            }
+
+            .navbar {
+                position: sticky;
+                top: 70px;
+                justify-content: center;
+                gap: 4px;
+                padding: 8px;
+            }
+
+            .navbar a {
+                font-size: 16px;
+                padding: 6px 8px;
+                margin: 1px;
+            }
+
+            .aboutme p {
+                /* font-size: 18px;
+                line-height: 1.6; */
+
+                grid-column: 1;
+                grid-row: 3;
+                width: 100%;
+                max-width: 100%;
+                min-width: 0;
+                font-size: 15px;
+                line-height: 1.75;
+                text-align: justify !important;
+                text-justify: inter-word;
+                overflow-wrap: anywhere;
+                box-sizing: border-box;
+            }
+
+            .profile-photo {
+                width: 240px;
+                height: 240px;
+            }
+
+            .images {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .natureimages {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+
+            .contact {
+                font-size: 18px;
+            }
+
+            .top-float,
+            .bottom-float {
+                right: 15px;
+            }
+        }
+
+
+        /* =========================
+           SMALL MOBILE
+        ========================= */
+
+        @media (max-width: 480px) {
+
+            html {
+                scroll-padding-top: 0;
+            }
+
+            section {
+                padding: 20px 12px;
+            }
+
+            .head1 {
+                position: static;
+                min-height: 65px;
+                padding: 8px 10px;
+                gap: 8px;
+            }
+
+            .head1 .logo {
+                width: 48px;
+                height: 48px;
+            }
+
+            .head1 h1 {
+                font-size: 22px;
+            }
+
+            .navbar {
+                position: static;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 6px;
+                padding: 10px;
+            }
+
+            .navbar a {
+                font-size: 15px;
+                padding: 8px 10px;
+                margin: 2px;
+            }
+
+            .aboutme h2,
+            .head2 h2 {
+                font-size: 22px;
+            }
+
+            .aboutme p {
+                font-size: 16px;
+                line-height: 1.7;
+                text-align: justify;
+            }
+
+            .profile-photo {
+                width: 210px;
+                height: 210px;
+            }
+
+            .images {
+                grid-template-columns: 1fr;
+                padding: 10px;
+                gap: 15px;
+            }
+
+            .natureimages {
+                grid-template-columns: 1fr;
+                padding: 10px;
+                gap: 15px;
+            }
+
+            .images img,
+            .natureimages img {
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
+
+            .contact {
+                font-size: 16px;
+            }
+
+            .contact a {
+                word-break: break-word;
+            }
+
+            .thankyou {
+                font-size: 18px;
+            }
+
+            footer {
+                font-size: 14px;
+            }
+
+            .top-float,
+            .bottom-float {
+                width: 38px;
+                height: 38px;
+                right: 12px;
+            }
+
+            .top-float {
+                bottom: 500px;
+            }
+
+            .bottom-float {
+                bottom: 60px;
+            }
+        }
+
+
+        /* =========================
+           GALLERY SELECTION
+        ========================= */
+        /* =========================
+   GALLERY SELECTION
+========================= */
+
+        .gallery-selection {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .gallery-selection h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .gallery-options {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .gallery-card {
+            width: min(360px, 90vw);
+            height: auto;
+            border-radius: 18px;
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.22);
+            transition: 0.3s ease;
+            background: #222;
+        }
+
+        .gallery-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+            transition: 0.3s ease;
+        }
+
+        .gallery-card:hover,
+        .gallery-card:focus {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+            outline: none;
+        }
+
+        .gallery-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .gallery-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-title {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 16px 12px;
+            background: rgba(0, 0, 0, 0.68);
+            color: white;
+            font-size: 23px;
+            font-weight: 600;
+        }
+
+        .gallery-action {
+            display: inline-block;
+            margin-top: 6px;
+            font-size: 16px;
+            font-weight: 500;
+            color: burlywood;
+            transition: 0.3s ease;
+        }
+
+        .gallery-card:hover .gallery-action {
+            transform: translateX(5px);
+            color: white;
+        }
+
+        .gallery-view {
+            display: none;
+            animation: galleryFade 0.35s ease;
+        }
+
+        .gallery-view.active {
+            display: block;
+        }
+
+        .back-button {
+            display: block;
+            margin: 30px auto 10px;
+            padding: 10px 24px;
+            border: none;
+            border-radius: 25px;
+            background: burlywood;
+            color: white;
+            font-family: inherit;
+            font-size: 17px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .back-button:hover {
+            background: #a87948;
+            transform: translateY(-2px);
+        }
+
+        @keyframes galleryFade {
+
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .gallery-selection {
+                padding: 30px 10px;
+            }
+
+            .gallery-selection h2 {
+                font-size: 27px;
+            }
+
+            .gallery-options {
+                gap: 20px;
+            }
+
+            .gallery-card {
+                height: 320px;
+                width: 95vw;
+            }
+
+            .gallery-card img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .gallery-title {
+                font-size: 20px;
+            }
+        }
+
+
+        /* =========================================================
+           POLISHED PORTFOLIO DESIGN — desktop, tablet and mobile
+           ========================================================= */
+        :root {
+            --paper: #faf7f2;
+            --surface: #ffffff;
+            --ink: #25221f;
+            --muted: #6d655d;
+            --accent: #a85d3b;
+            --accent-dark: #87462d;
+            --line: rgba(71, 53, 39, .12);
+            --soft-shadow: 0 12px 34px rgba(54, 39, 27, .09);
+            --card-radius: 20px;
+        }
+
+        html {
+            scroll-padding-top: 125px;
+        }
+
+        body {
+            background: var(--paper);
+            color: var(--ink);
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body.dark-mode {
+            --paper: #151412;
+            --surface: #211f1c;
+            --ink: #f6f0e9;
+            --muted: #c3b8ad;
+            --line: rgba(255, 255, 255, .12);
+            --soft-shadow: 0 12px 34px rgba(0, 0, 0, .28);
+            background: var(--paper);
+            color: var(--ink);
+        }
+
+        .head1 {
+            min-height: 88px;
+            padding: 10px clamp(16px, 4vw, 52px);
+            gap: 14px;
+            background: #25221f;
+            border-radius: 0;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, .12);
+        }
+
+        .head1 .logo {
+            width: 64px;
+            height: 64px;
+            border: 2px solid rgba(255, 255, 255, .78);
+            box-shadow: 0 3px 12px rgba(0, 0, 0, .22);
+        }
+
+        .head1 h1 {
+            font-size: clamp(23px, 3vw, 34px);
+            letter-spacing: -.8px;
+        }
+
+        .navbar {
+            top: 84px;
+            min-height: 58px;
+            padding: 9px clamp(10px, 3vw, 30px);
+            gap: 8px;
+            background: rgba(248, 239, 226, .96);
+            border: 0;
+            border-bottom: 1px solid var(--line);
+            border-radius: 0;
+            box-shadow: 0 5px 18px rgba(54, 39, 27, .06);
+            backdrop-filter: blur(12px);
+        }
+
+        .navbar a {
+            color: #342c25;
+            padding: 8px 15px;
+            margin: 0;
+            font-size: 14px;
+            font-weight: 600;
+            transition: background .2s ease, color .2s ease, transform .2s ease;
+        }
+
+        .navbar a:hover,
+        .navbar a:focus-visible {
+            color: var(--accent-dark);
+            background: rgba(168, 93, 59, .12);
+            outline: none;
+        }
+
+        #darkModeToggle {
+            padding: 9px 15px;
+            background: #302a25;
+            border: 1px solid rgba(255, 255, 255, .12);
+            font-family: inherit;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        #darkModeToggle:hover {
+            transform: translateY(-1px);
+            background: #493b31;
+        }
+
+        body.dark-mode .navbar {
+            background: rgba(35, 32, 29, .96);
+            border-bottom-color: var(--line);
+        }
+
+        body.dark-mode .navbar a {
+            color: #f2e9df;
+        }
+
+        body.dark-mode .navbar a:hover,
+        body.dark-mode .navbar a:focus-visible {
+            color: #f4c5a6;
+            background: rgba(244, 197, 166, .12);
+        }
+
+        body.dark-mode #darkModeToggle {
+            background: #f1e8df;
+            color: #28231f;
+        }
+
+        section {
+            padding: clamp(34px, 5vw, 68px) clamp(16px, 4vw, 54px);
+        }
+
+        .heads,
+        .head2 h2,
+        .gallery-selection h2 {
+            color: var(--ink);
+            font-size: clamp(25px, 3vw, 36px);
+            font-weight: 700;
+            letter-spacing: -.7px;
+            line-height: 1.25;
+        }
+
+        .heads::after,
+        .gallery-selection h2::after {
+            content: "";
+            display: block;
+            width: 48px;
+            height: 3px;
+            margin: 13px auto 0;
+            border-radius: 5px;
+            background: var(--accent);
+        }
+
+        .aboutme {
+            max-width: 1120px;
+            margin: 32px auto 28px;
+            padding: clamp(28px, 4vw, 48px);
+            display: grid;
+            grid-template-columns: minmax(190px, 290px) minmax(0, 1fr);
+            align-items: center;
+            column-gap: clamp(28px, 5vw, 64px);
+            row-gap: 14px;
+            text-align: left;
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: 26px;
+            box-shadow: var(--soft-shadow);
+        }
+
+        .aboutme h2 {
+            grid-column: 1 / -1;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .profile-photo {
+            grid-column: 1;
+            grid-row: 2;
+            width: min(100%, 260px);
+            height: 260px;
+            margin: 0 auto;
+            border: 6px solid var(--paper);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, .12);
+        }
+
+        .aboutme p {
+            grid-column: 2;
+            grid-row: 2;
+            max-width: 660px;
+            margin: 0;
+            color: var(--muted);
+            font-size: clamp(15px, 1.3vw, 17px);
+            line-height: 1.9;
+        }
+
+        .aboutme p b {
+            color: var(--ink);
+        }
+
+        .gallery {
+            padding: 0;
+        }
+
+        .gallery-selection {
+            padding: clamp(34px, 5vw, 62px) clamp(16px, 4vw, 50px);
+            text-align: center;
+        }
+
+        .gallery-selection h2 {
+            margin-bottom: 30px;
+        }
+
+        .gallery-options {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: clamp(18px, 3vw, 30px);
+            max-width: 1080px;
+            margin: 0 auto;
+        }
+
+        .gallery-card {
+            width: 100%;
+            height: clamp(260px, 32vw, 390px);
+            border: 1px solid var(--line);
+            border-radius: var(--card-radius);
+            box-shadow: var(--soft-shadow);
+            background: var(--surface);
+            isolation: isolate;
+        }
+
+        .gallery-card img {
+            transition: transform .55s cubic-bezier(.2, .7, .2, 1);
+        }
+
+        .gallery-card::after {
+            content: "";
+            position: absolute;
+            inset: 25% 0 0;
+            z-index: 0;
+            background: linear-gradient(180deg, transparent 0%, rgba(16, 13, 11, .82) 100%);
+            pointer-events: none;
+        }
+
+        .gallery-title {
+            z-index: 1;
+            padding: 24px clamp(14px, 2vw, 25px);
+            text-align: left;
+            background: transparent;
+            font-size: clamp(18px, 2vw, 25px);
+        }
+
+        .gallery-action {
+            color: #f2c8a8;
+            font-size: 14px;
+            margin-top: 4px;
+        }
+
+        .gallery-card:hover,
+        .gallery-card:focus-visible {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 42px rgba(54, 39, 27, .18);
+            outline: 3px solid rgba(168, 93, 59, .3);
+            outline-offset: 3px;
+        }
+
+        .gallery-view {
+            padding: 28px clamp(10px, 3vw, 36px) 45px;
+        }
+
+        .gallery-view .head2 {
+            margin: 10px 0 26px;
+        }
+
+        .images,
+        .natureimages {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 10px 0;
+            gap: clamp(14px, 2vw, 24px);
+            grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
+            align-items: start;
+        }
+
+        .images>div,
+        .natureimages>div {
+            padding: 10px;
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(54, 39, 27, .07);
+            transition: transform .22s ease, box-shadow .22s ease;
+        }
+
+        .images>div:hover,
+        .natureimages>div:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--soft-shadow);
+        }
+
+        .images img,
+        .natureimages img {
+            width: 100%;
+            max-height: 440px;
+            object-fit: contain;
+            margin-bottom: 8px;
+            border-radius: 10px;
+            box-shadow: none;
+            background: rgba(120, 100, 80, .06);
+        }
+
+        .images a,
+        .natureimages a {
+            margin: 5px 0 2px;
+            padding: 8px 13px;
+            border: 1px solid rgba(168, 93, 59, .3);
+            border-radius: 999px;
+            color: var(--accent-dark);
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .images a:hover,
+        .natureimages a:hover {
+            color: white;
+            background: var(--accent);
+        }
+
+        body.dark-mode .images>div,
+        body.dark-mode .natureimages>div {
+            background: var(--surface);
+            border-color: var(--line);
+        }
+
+        body.dark-mode .images a,
+        body.dark-mode .natureimages a {
+            color: #f2c8a8;
+        }
+
+        body.dark-mode .images a:hover,
+        body.dark-mode .natureimages a:hover {
+            color: #211914;
+            background: #f2c8a8;
+        }
+
+        .contact {
+            margin: 26px auto;
+            max-width: 1000px;
+            padding: clamp(28px, 4vw, 48px);
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: 24px;
+            box-shadow: var(--soft-shadow);
+            font-size: 16px;
+        }
+
+        .contact a {
+            display: inline-block;
+            padding: 5px 8px;
+        }
+
+        .contact a,
+        .contact a:hover,
+        .contact a:focus {
+            text-decoration: none;
+        }
+
+        .thankyou {
+            color: var(--muted);
+            padding: 12px 16px 32px;
+        }
+
+        footer {
+            padding: 22px 16px;
+            background: #25221f;
+            color: #f7efe7;
+            font-size: 13px;
+            letter-spacing: .2px;
+        }
+
+        .top-float,
+        .bottom-float {
+            right: max(14px, env(safe-area-inset-right));
+            width: 44px;
+            height: 44px;
+            border: 1px solid rgba(255, 255, 255, .15);
+            background: #302a25;
+            border-radius: 50%;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, .22);
+        }
+
+        .top-float {
+            bottom: 78px;
+        }
+
+        .bottom-float {
+            bottom: 20px;
+        }
+
+        button,
+        a {
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        a:focus-visible,
+        button:focus-visible {
+            outline: 3px solid var(--accent);
+            outline-offset: 3px;
+        }
+
+        @media (max-width: 760px) {
+            html {
+                scroll-padding-top: 145px;
+            }
+
+            .head1 {
+                min-height: 76px;
+                padding: 8px 12px;
+                gap: 10px;
+            }
+
+            .head1 .logo {
+                width: 54px;
+                height: 54px;
+            }
+
+            .head1 h1 {
+                font-size: clamp(21px, 5vw, 28px);
+                letter-spacing: -.5px;
+            }
+
+            .navbar {
+                top: 70px;
+                gap: 4px;
+                padding: 8px 6px;
+            }
+
+            .navbar a {
+                padding: 7px 10px;
+                font-size: 13px;
+            }
+
+            #darkModeToggle {
+                padding: 8px 11px;
+                font-size: 12px;
+            }
+
+            .aboutme {
+                grid-template-columns: minmax(0, 1fr);
+                margin: 20px 14px;
+                padding: 26px 20px;
+                text-align: center;
+                row-gap: 18px;
+            }
+
+            .aboutme h2 {
+                grid-column: 1;
+                grid-row: 1;
+            }
+
+            .profile-photo {
+                grid-column: 1;
+                grid-row: 2;
+                width: 190px;
+                height: 190px;
+            }
+
+            .aboutme p {
+                grid-column: 1;
+                grid-row: 3;
+                font-size: 15px;
+                text-align: left;
+            }
+
+            .gallery-options {
+                grid-template-columns: minmax(0, 1fr);
+                max-width: 520px;
+            }
+
+            .gallery-card {
+                height: clamp(240px, 62vw, 330px);
+            }
+
+            .images,
+            .natureimages {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 12px;
+            }
+
+            .images>div,
+            .natureimages>div {
+                padding: 7px;
+                border-radius: 12px;
+            }
+
+            .contact {
+                margin: 16px 14px;
+                padding: 28px 18px;
+            }
+        }
+
+        @media (max-width: 390px) {
+            .head1 .logo {
+                width: 46px;
+                height: 46px;
+            }
+
+            .head1 h1 {
+                font-size: 20px;
+            }
+
+            .navbar {
+                gap: 2px;
+            }
+
+            .navbar a {
+                padding: 7px 8px;
+                font-size: 12px;
+            }
+
+            #darkModeToggle {
+                padding: 7px 9px;
+                font-size: 11px;
+            }
+
+            .images,
+            .natureimages {
+                grid-template-columns: minmax(0, 1fr);
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+
+            .images img,
+            .natureimages img {
+                max-height: 520px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            *,
+            *::before,
+            *::after {
+                scroll-behavior: auto !important;
+                animation-duration: .01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: .01ms !important;
+            }
+        }
+
+        /* =========================
+           SHARE BUTTON (matches Download pill)
+        ========================= */
+
+        .images .share-btn,
+        .natureimages .share-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin: 2px 0 4px;
+            padding: 8px 13px;
+            border: 1px solid rgba(168, 93, 59, .3);
+            border-radius: 999px;
+            background: transparent;
+            color: var(--accent-dark);
+            font-family: inherit;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background .2s ease, color .2s ease;
+        }
+
+        .images .share-btn:hover,
+        .natureimages .share-btn:hover {
+            color: #fff;
+            background: var(--accent);
+        }
+
+        body.dark-mode .images .share-btn,
+        body.dark-mode .natureimages .share-btn {
+            color: #f2c8a8;
+        }
+
+        body.dark-mode .images .share-btn:hover,
+        body.dark-mode .natureimages .share-btn:hover {
+            color: #211914;
+            background: #f2c8a8;
+        }
+
+        /* Download + Share sit side by side */
+        .images>div br,
+        .natureimages>div br {
+            display: none;
+        }
+
+        .images>div,
+        .natureimages>div {
+            text-align: center;
+        }
+    </style>
+</head>
+
+
+<body id="top">
+
+    <!-- =========================
+         HEADER
+    ========================= -->
+
+    <header class="head1">
+
+        <img alt="Pencils &amp; Pixels logo" class="logo"
+            src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791121750/badge_pacifico_rrt2qj.jpg" />
+
+        <h1>Pencils &amp; Pixels</h1>
+
+    </header>
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================= -->
+
+    <nav class="navbar">
+        <a href="#aboutme">About me</a>
+        <a href="#gallery">My Gallery</a>
+        <a href="#contact">Contact</a>
+
+        <button id="darkModeToggle" type="button">
+            <i class="bi bi-moon-fill"></i>
+            <span>Dark Mode</span>
+        </button>
+    </nav>
+
+
+    <!-- =========================
+         FLOATING BUTTONS
+    ========================= -->
+
+    <div class="bottom-float">
+
+        <button type="button" id="bottomButton" aria-label="Go to bottom">
+
+            <i class="bi bi-arrow-down"></i>
+
+        </button>
+
+    </div>
+
+
+    <div class="top-float">
+
+        <button type="button" id="topButton" aria-label="Go to top">
+
+            <i class="bi bi-arrow-up"></i>
+
+        </button>
+
+    </div>
+
+
+    <!-- =========================
+         ABOUT ME
+    ========================= -->
+
+    <section class="aboutme" id="aboutme">
+
+        <h2 class="heads">About me</h2>
+
+        <img alt="Profile photo of Rama Charan Reddy" class="profile-photo"
+            src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103021/IMG_20260221_211948_699_web_keowp5.jpg" />
+
+        <p>
+            <!-- <b>Rama Charan Reddy Chinnakambaiah Gari</b>,
+
+            a Computer Science and Engineering graduate based in
+            Kadapa, Andhra Pradesh, with a passion for creativity
+            and technology.
+
+            Alongside my interest in software development, I enjoy
+            creating realistic pencil sketches and capturing the
+            beauty of nature through photography. -->
+
+            Hi, I'm <b>Rama Charan Reddy Chinnakambaiah Gari</b>
+
+            Welcome to <b> Pencils & Pixels</b>, a place where my passion for pencil art and photography comes to life.
+
+            I love turning simple ideas and observations into detailed pencil sketches, and capturing the beauty of
+            nature, places, and memorable moments through photography.
+
+            Every drawing and photograph tells a story, reflects a moment, or captures something that caught my eye.
+            Through <b>Pencils & Pixels</b>, I’m excited to share my creative journey and the moments that inspire me.
+            <br>
+
+            <b>Draw. Capture. Create.</b>
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         GALLERY
+    ========================= -->
+
+    <section class="gallery">
+
+        <!-- =========================
+             GALLERY SELECTION
+        ========================= -->
+
+        <div class="gallery-selection" id="gallery">
+
+            <h2>My Gallery</h2>
+
+            <div class="gallery-options">
+
+                <div class="gallery-card" onclick="showGallery('art')" role="button" tabindex="0">
+
+                    <!-- <img alt="Art Gallery"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103094/IMG20260627191402_web_xzif0l.jpg" /> -->
+                    <img src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791362810/IMG_20261007_141403_uuguz4.jpg"
+                        alt="Featured pencil art from the Pencils & Pixels gallery" loading="lazy">
+
+                    <div class="gallery-title">
+                        <div>🎨 Art Gallery</div>
+                        <span class="gallery-action">See My Art →</span>
+                    </div>
+
+                </div>
+
+
+                <div class="gallery-card" onclick="showGallery('photography')" role="button" tabindex="0">
+
+                    <img src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103018/f1gwjd_web_qfjyzn.jpg"
+                        alt="Featured nature photograph from the Pencils & Pixels gallery" loading="lazy" />
+
+                    <div class="gallery-title">
+                        <div>📷 Photography Gallery</div>
+                        <span class="gallery-action">See My Photos →</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+             ART GALLERY
+        ================================================== -->
+
+        <div class="gallery-view" id="artGallery">
+
+            <div class="head2">
+
+                <h2 class="heads">
+                    🎨 Art Gallery
+                </h2>
+
+            </div>
+
+
+            <div class="images">
+
+                <div>
+                    <img alt="Pencil sketch of a dance pose" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791622458/IMG20261010130137_emitjm.jpg" />
+
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791622458/IMG20261010130137_emitjm.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+
+<!-- like option
+                    <button class="like-btn" type="button" aria-pressed="false">
+                        <span class="heart">♡</span>
+                        <span class="like-text">Like</span>
+                    </button> -->
+
+                </div>
+
+
+                <div>
+                    <img alt="Pencil sketch of Krishna" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791362810/IMG_20261007_141403_uuguz4.jpg" />
+
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791362810/IMG_20261007_141403_uuguz4.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Pencil sketch of a girl" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791623222/IMG20261010142922_nn1ibo.jpg" />
+
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103021/IMG_20260329_203129_web_ymv6ny.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Pencil portrait" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791624227/IMG20261010144039_pl3c1z.jpg" />
+
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791624227/IMG20261010144039_pl3c1z.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Pencil sketch" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791626037/IMG20261010145638_ievaif.jpg" />
+
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791626037/IMG20261010145638_ievaif.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Pencil sketch of a girl with a butterfly" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791627256/IMG20261010153117_s65ovi.jpg" />
+
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791627256/IMG20261010153117_s65ovi.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+                <div>
+                    <img alt="Pencil sketch of Rama" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791627875/IMG20261010154601_llmnks.jpg" />
+
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791627875/IMG20261010154601_llmnks.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+                <div>
+                    <img alt="Pencil sketch of a woman" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791629348/IMG20261010160741_ugqy8a.jpg" />
+
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791629348/IMG20261010160741_ugqy8a.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Pencil sketch of a man wearing a hat" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791630131/IMG20261010162401_mnpqd2.jpg" />
+
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791630131/IMG20261010162401_mnpqd2.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Pencil sketch of a girl with a hat" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791630765/IMG20261010163459_1_rtgrbs.jpg" />
+
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791630765/IMG20261010163459_1_rtgrbs.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Pencil sketch of Buddha" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791631481/IMG20261010164651_yflcs2.jpg" />
+
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791631481/IMG20261010164651_yflcs2.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Pencil sketch of a boy" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103059/IMG20240506173234_web_a1qirc.jpg" />
+
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103059/IMG20240506173234_web_a1qirc.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Pencil sketch of a camera" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791632190/IMG20261010165817_1_gidkcu.jpg" />
+
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791632190/IMG20261010165817_1_gidkcu.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Pencil sketch of Hanuman" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791632403/IMG20261010170855_diorgk.jpg" />
+
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791632403/IMG20261010170855_diorgk.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Pencil sketch of a farmer" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791633177/IMG20261010171350_1_mmbash.jpg" />
+
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791633177/IMG20261010171350_1_mmbash.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Pencil sketch of a girl" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791634195/IMG20261010172844_fp0l99.jpg" />
+
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791634195/IMG20261010172844_fp0l99.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Pencil sketch of a heart" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791634887/IMG20261010174141_1_wtdfvc.jpg" />
+
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791634887/IMG20261010174141_1_wtdfvc.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Pencil sketch of Radha" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791635522/IMG20261010175442_hr0owm.jpg" />
+
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791635522/IMG20261010175442_hr0owm.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Pencil sketch of a boy and girl having coffee" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791636055/IMG20261010180626_tgnrpu.jpg" />
+
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791636055/IMG20261010180626_tgnrpu.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Pencil sketch of a girl" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791636779/IMG20261010181316_ax048s.jpg" />
+
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791636779/IMG20261010181316_ax048s.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Pencil artwork" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791637926/IMG20261010183520_xm2rev.jpg" />
+
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791637926/IMG20261010183520_xm2rev.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Pencil artwork" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791650592/IMG20261010220321_kwi1ur.jpg" />
+
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791650592/IMG20261010220321_kwi1ur.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+                <div>
+                    <img src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791657402/IMG20261010235635_mvrvpk.jpg"
+                        alt="image" loading="lazy">
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791657402/IMG20261010235635_mvrvpk.jpg">Download</a>
+                    <br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+                <!-- <div>
+                    <img alt="Pencil artwork" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791637926/IMG20261010183520_xm2rev.jpg" />
+
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791637926/IMG20261010183520_xm2rev.jpg">
+                        Download
+                    </a>
+                </div> -->
+
+                <div>
+                    <img alt="Pencil sketch of Krishna" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791651327/IMG20261010221747_jjk2th.jpg" />
+
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791651327/IMG20261010221747_jjk2th.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Pencil artwork" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791652172/IMG20261010222747_mfacxg.jpg" />
+
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791652172/IMG20261010222747_mfacxg.jpg">
+                        Download
+                    </a>
+                    <br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Pencil sketch of women" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791652939/IMG20261010224600_hqxggx.jpg" />
+
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791652939/IMG20261010224600_hqxggx.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Pencil sketch of a girl with a camera" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791653498/IMG20261010225357_utpwjo.jpg" />
+
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791653498/IMG20261010225357_utpwjo.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Pencil artwork" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103084/IMG20260121201039_web_sjeesd.jpg" />
+
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103084/IMG20260121201039_web_sjeesd.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Pencil artwork" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103032/IMG_20260803_171703_web_ikszcj.jpg" />
+
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103032/IMG_20260803_171703_web_ikszcj.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Pencil sketch of a girl" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791116607/IMG_20261004_175158_dbr9ls.jpg" />
+
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791116607/IMG_20261004_175158_dbr9ls.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Pencil artwork of women" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786269636/women_wqumda.jpg" />
+
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786269636/women_wqumda.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Pencil artwork" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786269636/WhatsApp_Image_2026-08-09_at_3.25.51_PM_thdm5l.jpg" />
+
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786269636/WhatsApp_Image_2026-08-09_at_3.25.51_PM_thdm5l.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Pencil artwork" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791115813/IMG_20260830_205259_zkubzc.jpg" />
+
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791115813/IMG_20260830_205259_zkubzc.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Pencil artwork" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791117510/IMG_20261004_180700_x18xxs.jpg" />
+
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791117510/IMG_20261004_180700_x18xxs.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Pencil artwork" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791118288/IMG20260816010218_dnqcvx.jpg" />
+
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791118288/IMG20260816010218_dnqcvx.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+                <div>
+                    <img src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791654151/IMG20261010230552_m7scmj.jpg"
+                        alt="boy" loading="lazy">
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791654151/IMG20261010230552_m7scmj.jpg">Download</a>
+                    <br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Pencil artwork" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791654864/IMG20261010231456_maxkel.jpg" />
+
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791654864/IMG20261010231456_maxkel.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+                <div>
+                    <img src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791656013/IMG20261010232610_q3mlvh.jpg"
+                        alt="Pencil artwork" loading="lazy">
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791656013/IMG20261010232610_q3mlvh.jpg">Download</a>
+
+                    <br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+                <div>
+                    <img src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791656581/IMG20261010234607_ygoqox.jpg"
+                        alt="Boy" loading="lazy">
+                    <a download=""
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791656581/IMG20261010234607_ygoqox.jpg">Download</a>
+                    <br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+            </div>
+
+
+            <button class="back-button" onclick="backToGallery()" type="button">
+
+                ← Back to Gallery
+
+            </button>
+
+        </div>
+
+
+        <!-- ==================================================
+             PHOTOGRAPHY GALLERY
+        ================================================== -->
+
+        <div class="gallery-view" id="photographyGallery">
+
+            <div class="head2">
+
+                <h2 class="heads">
+                    📷 Photography Gallery
+                </h2>
+
+            </div>
+
+
+            <section class="natureimages">
+
+                <div>
+                    <img alt="Temple photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103076/IMG20251020133112_web_zt99t2.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103076/IMG20251020133112_web_zt99t2.jpg">
+                        Download
+                    </a>
+                    <br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Temple entrance photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103076/IMG20251020130733_web_ybmqn7.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103076/IMG20251020130733_web_ybmqn7.jpg">
+                        Download
+                    </a>
+                    <br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Temple photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103038/IMG-20260804-WA0005_web_w4eg86.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103038/IMG-20260804-WA0005_web_w4eg86.jpg">
+                        Download
+                    </a>
+                    <br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Temple photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103069/IMG20250809101700_web_sokdqz.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103069/IMG20250809101700_web_sokdqz.jpg">
+                        Download
+                    </a>
+                    <br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Temple photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103019/IMG_20250710_175414_web_r4xgoc.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103019/IMG_20250710_175414_web_r4xgoc.jpg">
+                        Download
+                    </a>
+                    <br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Nature photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791118881/IMG20260918113320_avxi0w.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791118881/IMG20260918113320_avxi0w.jpg">
+                        Download
+                    </a>
+                    <br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Lord Rama photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786257770/WhatsApp_Image_2026-08-09_at_12.10.59_PM_e6vulc.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786257770/WhatsApp_Image_2026-08-09_at_12.10.59_PM_e6vulc.jpg">
+                        Download
+                    </a>
+                    <br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Nature photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103067/IMG20250710151550_web_xgzwvf.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103067/IMG20250710151550_web_xgzwvf.jpg">
+                        Download
+                    </a>
+                    <br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Sunset over a field" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103077/IMG20251020173532_web_uq7qyl.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103077/IMG20251020173532_web_uq7qyl.jpg">
+                        Download
+                    </a>
+                    <br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Sunset photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103078/IMG20251020173549_web_wfj63k.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103078/IMG20251020173549_web_wfj63k.jpg">
+                        Download
+                    </a>
+                    <br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Rainbow photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103033/IMG-20251022-WA0011_web_jvor9c.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103033/IMG-20251022-WA0011_web_jvor9c.jpg">
+                        Download
+                    </a>
+                    <br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Elephant photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103074/IMG20251020122038_web_xm0pto.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103074/IMG20251020122038_web_xm0pto.jpg">
+                        Download
+                    </a>
+                    <br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Stone sculpture photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103075/IMG20251020122121_web_kqaofo.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103075/IMG20251020122121_web_kqaofo.jpg">
+                        Download
+                    </a>
+                    <br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Nature photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103074/IMG20251020122107_web_qpbcap.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103074/IMG20251020122107_web_qpbcap.jpg">
+                        Download
+                    </a>
+                    <br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Stone sculpture photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103074/IMG20251020121818_web_q8au5l.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103074/IMG20251020121818_web_q8au5l.jpg">
+                        Download
+                    </a>
+                    <br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Nature photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103073/IMG20251020121811_web_pc4erm.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103073/IMG20251020121811_web_pc4erm.jpg">
+                        Download
+                    </a>
+                    <br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Hanuman statue photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103018/Hanuman_web_kjmr72.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103018/Hanuman_web_kjmr72.jpg">
+                        Download
+                    </a>
+                    <br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Temple photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103049/IMG20240106011135_web_thia20.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103049/IMG20240106011135_web_thia20.jpg">
+                        Download
+                    </a>
+                    <br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Blue lake photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103019/IMG_20251225_125837_web_gsfch2.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103019/IMG_20251225_125837_web_gsfch2.jpg">
+                        Download
+                    </a>
+                    <br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Temple photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103062/IMG20241024120337_web_tyfpnx.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103062/IMG20241024120337_web_tyfpnx.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Green paddy field" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103067/IMG20250710151612_web_bibw7k.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103067/IMG20250710151612_web_bibw7k.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="White flower photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103018/f1gwjd_web_qfjyzn.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103018/f1gwjd_web_qfjyzn.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Tangedu flower photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103020/IMG_20260107_220207_web_a2capx.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103020/IMG_20260107_220207_web_a2capx.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Birds photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103036/IMG-20260707-WA0001_web_cdypap.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103036/IMG-20260707-WA0001_web_cdypap.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Nature photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103046/IMG20231026174746_web_dlw21c.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103046/IMG20231026174746_web_dlw21c.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Clouds photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103095/IMG20260707174952_web_ubghhb.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103095/IMG20260707174952_web_ubghhb.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Clouds photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103095/IMG20260707175018_web_ljapza.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103095/IMG20260707175018_web_ljapza.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Lake photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103091/IMG20260322171034_web_tsfhdm.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103091/IMG20260322171034_web_tsfhdm.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Lake photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103091/IMG20260322171030_web_sgco8j.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103091/IMG20260322171030_web_sgco8j.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Lake photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103090/IMG20260322171010_web_ox955l.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103090/IMG20260322171010_web_ox955l.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Lake photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103090/IMG20260322171004_web_znwq8a.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103090/IMG20260322171004_web_znwq8a.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Lake photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103089/IMG20260322170950_web_ctez6v.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103089/IMG20260322170950_web_ctez6v.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Lake photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103089/IMG20260322170932_web_dwamlq.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103089/IMG20260322170932_web_dwamlq.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Railway track photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103088/IMG20260322170925_web_giru2j.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103088/IMG20260322170925_web_giru2j.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Nature photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103080/IMG20251214175752_web_b50sqk.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103080/IMG20251214175752_web_b50sqk.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Nature photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103080/IMG20251214175748_web_lecq2r.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103080/IMG20251214175748_web_lecq2r.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Nature photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103084/IMG20260211161808_web_kdn3hi.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103084/IMG20260211161808_web_kdn3hi.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Sky photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103085/IMG20260211161930_web_gx2u4g.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103085/IMG20260211161930_web_gx2u4g.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="White flower photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103088/IMG20260225090248_web_i5o2y9.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103088/IMG20260225090248_web_i5o2y9.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Nature photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103061/IMG20240818090125_web_q6nxes.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103061/IMG20240818090125_web_q6nxes.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Nature photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103061/IMG20240818085256_web_o5yqss.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103061/IMG20240818085256_web_o5yqss.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="White flower photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103087/IMG20260225090238_web_nfkxie.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103087/IMG20260225090238_web_nfkxie.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Nature photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103062/IMG20240907085058_web_fcm5m2.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103062/IMG20240907085058_web_fcm5m2.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Nature photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786260722/WhatsApp_Image_2026-08-09_at_12.59.31_PM_wegnuz.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786260722/WhatsApp_Image_2026-08-09_at_12.59.31_PM_wegnuz.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Blue flower photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103086/IMG20260223094505_web_s7xpcr.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103086/IMG20260223094505_web_s7xpcr.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Yellow flower photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103083/IMG20260108081143_web_n14c8s.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103083/IMG20260108081143_web_n14c8s.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Flower photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103082/IMG20260108081127_web_vjqiml.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103082/IMG20260108081127_web_vjqiml.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Chrysanthemum flower photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103079/IMG20251201081340_web_zrmvb8.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103079/IMG20251201081340_web_zrmvb8.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Sunset over a field" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103077/IMG20251020173532_web_uq7qyl.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103077/IMG20251020173532_web_uq7qyl.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Sunrise photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103036/IMG-20260707-WA0000_web_pfxczf.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103036/IMG-20260707-WA0000_web_pfxczf.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Onion field photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103070/IMG20250826162156_web_bklulw.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103070/IMG20250826162156_web_bklulw.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Nature photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103064/IMG20250112125350_web_gnvi2x.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103064/IMG20250112125350_web_gnvi2x.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Nature photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103065/IMG20250112125533_web_l1bkj9.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103065/IMG20250112125533_web_l1bkj9.jpg">
+                        Download
+                    </a><br>
+                    <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Nature photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103066/IMG20250112150513_web_jd7nhh.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103066/IMG20250112150513_web_jd7nhh.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Chilli field photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103067/IMG20250223154116_web_tycuff.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103067/IMG20250223154116_web_tycuff.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Nature photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103034/IMG-20260109-WA0000_web_axh3t2.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103034/IMG-20260109-WA0000_web_axh3t2.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Flower photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103058/IMG20240308084904_web_bvkuwd.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103058/IMG20240308084904_web_bvkuwd.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Flower photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103058/IMG20240308084822_web_hpo1rd.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103058/IMG20240308084822_web_hpo1rd.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Flower photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103051/IMG20240308084727_web_xwzpqx.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103051/IMG20240308084727_web_xwzpqx.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Nature photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103050/IMG20240308071630_web_eskvg7.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103050/IMG20240308071630_web_eskvg7.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Nature photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103057/IMG20240308084801_web_cgndaw.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103057/IMG20240308084801_web_cgndaw.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Nature photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103057/IMG20240308084753_web_g2yupg.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103057/IMG20240308084753_web_g2yupg.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Nature photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103050/IMG20240308084715_web_bsaw9c.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103050/IMG20240308084715_web_bsaw9c.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Nature photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103046/IMG20231026064431_web_erz4hv.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103046/IMG20231026064431_web_erz4hv.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Nature photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103046/IMG20231026064659_web_f5wliq.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103046/IMG20231026064659_web_f5wliq.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Nature photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103018/-3o8mxj_web_uozeak.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103018/-3o8mxj_web_uozeak.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Shiva photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103100/Snapchat-509231530_web_dymrnk.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103100/Snapchat-509231530_web_dymrnk.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Temple photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103043/IMG20230916194434_web_fklnba.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103043/IMG20230916194434_web_fklnba.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Temple photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103100/Snapchat-772658766_web_ki0cas.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103100/Snapchat-772658766_web_ki0cas.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Moon photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103068/IMG20250710191600_web_ojhhpy.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103068/IMG20250710191600_web_ojhhpy.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Hanuman photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103063/IMG20241123095358_web_wxtr5w.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103063/IMG20241123095358_web_wxtr5w.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Sky photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103095/IMG20260707135014_web_perg1o.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103095/IMG20260707135014_web_perg1o.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Deer photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103061/IMG20240508180356_web_zxnvcl.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103061/IMG20240508180356_web_zxnvcl.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Nature photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103048/IMG20231223202709_web_os7cwk.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103048/IMG20231223202709_web_os7cwk.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Nature photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103048/IMG20231223202727_01_web_zpgqs4.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103048/IMG20231223202727_01_web_zpgqs4.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Pen and book photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103047/IMG20231220213853_web_wvadzb.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103047/IMG20231220213853_web_wvadzb.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Nature photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103047/IMG20231028072823_web_rnyi78.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103047/IMG20231028072823_web_rnyi78.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Nature photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103045/IMG20231025084436_web_cfl3i2.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103045/IMG20231025084436_web_cfl3i2.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Nature photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103043/IMG20231021074951_web_o0gv8w.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103043/IMG20231021074951_web_o0gv8w.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Nature photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103042/IMG20230719183842_web_qmnzxp.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103042/IMG20230719183842_web_qmnzxp.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Nature photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103041/IMG20230603094022_web_rdcryo.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103041/IMG20230603094022_web_rdcryo.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Nature photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1786103041/IMG20230528101259_web_fjz0y9.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1786103041/IMG20230528101259_web_fjz0y9.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Flower photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791118882/IMG20260826080931_mdkyzs.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791118882/IMG20260826080931_mdkyzs.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Nature photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791118881/IMG20260923114104_pgtubz.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791118881/IMG20260923114104_pgtubz.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Nature photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791118881/IMG20260923114114_s8iqdh.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791118881/IMG20260923114114_s8iqdh.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Nature photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791118881/IMG20260923114515_xyrdly.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791118881/IMG20260923114515_xyrdly.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+
+                <div>
+                    <img alt="Sunset photograph" loading="lazy"
+                        src="https://res.cloudinary.com/dqd1b9zru/image/upload/v1791118881/IMG20260919170537_njd19o.jpg" />
+
+                    <a
+                        href="https://res.cloudinary.com/dqd1b9zru/image/upload/fl_attachment/v1791118881/IMG20260919170537_njd19o.jpg">
+                        Download
+                    </a><br> <button class="share-btn" onclick="shareImage(this)">
+                        <i class="bi bi-share"></i> Share
+                    </button>
+                </div>
+
+            </section>
+
+
+            <button class="back-button" onclick="backToGallery()" type="button">
+
+                ← Back to Gallery
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================= -->
+
+    <section class="contact" id="contact">
+
+        <h2 class="heads">
+            Contact
+        </h2>
+
+        <p>
+
+            <a class="mail" href="mailto:ckramacharanreddy@gmail.com">
+
+                <i class="fa-regular fa-envelope"></i>
+
+                ckramacharanreddy@gmail.com
+
+            </a>
+
+            <br />
+
+
+            <a class="linkedin" href="https://www.linkedin.com/in/rama-charan-reddy-ck-952aa2312"
+                rel="noopener noreferrer" target="_blank">
+
+                <i class="fa-brands fa-linkedin"></i>
+
+                LinkedIn
+
+            </a>
+
+            <br />
+
+
+            <a class="github" href="https://www.github.com/ramacharanreddy003" rel="noopener noreferrer"
+                target="_blank">
+
+                <i class="fa-brands fa-github"></i>
+
+                GitHub
+
+            </a>
+
+            <br />
+
+
+            <a class="instagram" href="https://www.instagram.com/charan_reddy.03" rel="noopener noreferrer"
+                target="_blank">
+
+                <i class="fa-brands fa-instagram"></i>
+
+                Instagram
+
+            </a>
+
+            <br />
+
+
+            <a class="instagram" href="https://www.instagram.com/pencils_and._pixels/" rel="noopener noreferrer"
+                target="_blank">
+
+                <i class="fa-brands fa-instagram"></i>
+
+                Pencils &amp; Pixels
+
+            </a>
+
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         THANK YOU
+    ========================= -->
+
+    <section class="thankyou" style="text-align: center;">
+
+        <p>
+            Thank you for visiting!
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        2026 Charan Reddy | Made with ❤️
+
+    </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================= -->
+
+    <script>
+
+
+        /* ==================================================
+           GALLERY STATE
+        ================================================== */
+
+        let galleryOpened = false;
+
+
+        /* ==================================================
+           INITIAL BROWSER HISTORY
+        ================================================== */
+
+        history.replaceState(
+            { gallery: 'home' },
+            '',
+            window.location.href
+        );
+
+
+        /* ==================================================
+           OPEN GALLERY
+        ================================================== */
+
+        function showGallery(type) {
+
+            // Hide My Gallery selection
+            document.querySelector('.gallery-selection').style.display = 'none';
+
+
+            // Hide all gallery views
+            document.querySelectorAll('.gallery-view').forEach(function (view) {
+
+                view.classList.remove('active');
+
+            });
+
+
+            // Get selected gallery
+            const selectedGallery =
+                document.getElementById(type + 'Gallery');
+
+
+            if (selectedGallery) {
+
+                // Show selected gallery
+                selectedGallery.classList.add('active');
+
+                galleryOpened = true;
+
+
+                // Add browser history
+                history.pushState(
+                    { gallery: type },
+                    '',
+                    '#gallery-view'
+                );
+
+
+                /*
+                    Calculate header + navbar height.
+
+                    This prevents the gallery heading
+                    from hiding underneath the sticky header.
+                */
+
+                const headerHeight =
+                    document.querySelector('.head1')?.offsetHeight || 0;
+
+                const navbarHeight =
+                    document.querySelector('.navbar')?.offsetHeight || 0;
+
+
+                const totalHeaderHeight =
+                    headerHeight + navbarHeight;
+
+
+                const topPosition =
+                    selectedGallery.getBoundingClientRect().top +
+                    window.scrollY -
+                    totalHeaderHeight;
+
+
+                // Scroll to gallery
+                window.scrollTo({
+
+                    top: Math.max(0, topPosition),
+
+                    behavior: 'smooth'
+
+                });
+
+            }
+
+        }
+
+
+        /* ==================================================
+           SHOW MY GALLERY
+        ================================================== */
+
+        function showGallerySelection() {
+
+            // Hide Art / Photography galleries
+            document.querySelectorAll('.gallery-view').forEach(function (view) {
+
+                view.classList.remove('active');
+
+            });
+
+
+            // Show My Gallery selection
+            const selection =
+                document.querySelector('.gallery-selection');
+
+
+            selection.style.display = 'block';
+
+            galleryOpened = false;
+
+
+            // Scroll to My Gallery
+            selection.scrollIntoView({
+
+                behavior: 'smooth',
+
+                block: 'start'
+
+            });
+
+        }
+
+
+        /* ==================================================
+           BACK TO GALLERY BUTTON
+        ================================================== */
+
+        function backToGallery() {
+
+            if (galleryOpened) {
+
+                // Browser history handles returning
+                history.back();
+
+            } else {
+
+                showGallerySelection();
+
+            }
+
+        }
+
+
+        /* ==================================================
+           BROWSER BACK BUTTON
+        ================================================== */
+
+        window.addEventListener('popstate', function () {
+
+            if (galleryOpened) {
+
+                showGallerySelection();
+
+            }
+
+        });
+
+
+        /* ==================================================
+           GET CURRENT OPEN PAGE
+        ================================================== */
+
+        function getCurrentPage() {
+
+            const activeGallery =
+                document.querySelector('.gallery-view.active');
+
+
+            if (activeGallery) {
+
+                return activeGallery;
+
+            }
+
+
+            // No gallery is open.
+            // Therefore the current page is the main page.
+
+            return document.documentElement;
+
+        }
+
+
+        /* ==================================================
+           GO TO CURRENT PAGE TOP
+        ================================================== */
+
+        function goToCurrentPageTop() {
+
+            const activeGallery =
+                document.querySelector('.gallery-view.active');
+
+
+            /*
+                IF ART OR PHOTOGRAPHY GALLERY IS OPEN
+            */
+
+            if (activeGallery) {
+
+                const headerHeight =
+                    document.querySelector('.head1')?.offsetHeight || 0;
+
+
+                const navbarHeight =
+                    document.querySelector('.navbar')?.offsetHeight || 0;
+
+
+                const totalHeaderHeight =
+                    headerHeight + navbarHeight;
+
+
+                /*
+                    Find the exact top position
+                    of the currently open gallery.
+                */
+
+                const topPosition =
+                    activeGallery.getBoundingClientRect().top +
+                    window.scrollY -
+                    totalHeaderHeight;
+
+
+                window.scrollTo({
+
+                    top: Math.max(0, topPosition),
+
+                    behavior: 'smooth'
+
+                });
+
+            }
+
+            /*
+                IF MAIN PAGE IS OPEN
+            */
+
+            else {
+
+                window.scrollTo({
+
+                    top: 0,
+
+                    behavior: 'smooth'
+
+                });
+
+            }
+
+        }
+
+
+        /* ==================================================
+           GO TO CURRENT PAGE BOTTOM
+        ================================================== */
+
+        function goToCurrentPageBottom() {
+
+            const activeGallery =
+                document.querySelector('.gallery-view.active');
+
+
+            /*
+                IF ART OR PHOTOGRAPHY GALLERY IS OPEN
+            */
+
+            if (activeGallery) {
+
+                /*
+                    Get the bottom of the currently
+                    visible gallery.
+                */
+
+                const bottomPosition =
+                    activeGallery.getBoundingClientRect().bottom +
+                    window.scrollY -
+                    window.innerHeight;
+
+
+                window.scrollTo({
+
+                    top: Math.max(0, bottomPosition),
+
+                    behavior: 'smooth'
+
+                });
+
+            }
+
+            /*
+                IF MAIN PAGE IS OPEN
+            */
+
+            else {
+
+                window.scrollTo({
+
+                    top: document.documentElement.scrollHeight,
+
+                    behavior: 'smooth'
+
+                });
+
+            }
+
+        }
+
+
+        /* ==================================================
+           TOP FLOATING BUTTON
+        ================================================== */
+
+        document
+            .getElementById('topButton')
+            .addEventListener('click', function () {
+
+                goToCurrentPageTop();
+
+            });
+
+
+        /* ==================================================
+           BOTTOM FLOATING BUTTON
+        ================================================== */
+
+        document
+            .getElementById('bottomButton')
+            .addEventListener('click', function () {
+
+                goToCurrentPageBottom();
+
+            });
+
+
+        /* ==================================================
+           KEYBOARD SUPPORT
+        ================================================== */
+
+        document.addEventListener('keydown', function (event) {
+
+
+            /* ==================================================
+               ARROW UP
+            ================================================== */
+
+            if (event.key === 'ArrowUp') {
+
+                event.preventDefault();
+
+                event.stopPropagation();
+
+
+                /*
+                    Go directly to the TOP of the
+                    currently open page/gallery.
+                */
+
+                goToCurrentPageTop();
+
+
+                return;
+
+            }
+
+
+            /* ==================================================
+               ARROW DOWN
+            ================================================== */
+
+            if (event.key === 'ArrowDown') {
+
+                event.preventDefault();
+
+                event.stopPropagation();
+
+
+                /*
+                    Go directly to the BOTTOM of the
+                    currently open page/gallery.
+                */
+
+                goToCurrentPageBottom();
+
+
+                return;
+
+            }
+
+
+            /* ==================================================
+               ENTER → OPEN GALLERY
+            ================================================== */
+
+            if (event.key === 'Enter') {
+
+                const card =
+                    document.activeElement;
+
+
+                if (
+                    card &&
+                    card.classList.contains('gallery-card')
+                ) {
+
+                    event.preventDefault();
+
+                    card.click();
+
+                }
+
+                return;
+
+            }
+
+
+            /* ==================================================
+               SPACE → OPEN GALLERY
+            ================================================== */
+
+            if (event.key === ' ') {
+
+                const card =
+                    document.activeElement;
+
+
+                if (
+                    card &&
+                    card.classList.contains('gallery-card')
+                ) {
+
+                    event.preventDefault();
+
+                    card.click();
+
+                }
+
+                return;
+
+            }
+
+        });
+
+
+        /* ==================================================
+           KEYBOARD ACCESS FOR GALLERY CARDS
+        ================================================== */
+
+        document
+            .querySelectorAll('.gallery-card')
+            .forEach(function (card) {
+
+                card.addEventListener('keydown', function (event) {
+
+                    if (
+                        event.key === 'Enter' ||
+                        event.key === ' '
+                    ) {
+
+                        event.preventDefault();
+
+                        card.click();
+
+                    }
+
+                });
+
+            });
+
+
+
+        /*Dark mode*/
+        const darkModeToggle = document.getElementById("darkModeToggle");
+
+        const icon = darkModeToggle.querySelector("i");
+        const text = darkModeToggle.querySelector("span");
+
+        // Load saved theme
+        if (localStorage.getItem("theme") === "dark") {
+            document.body.classList.add("dark-mode");
+            icon.className = "bi bi-sun-fill";
+            text.textContent = "Light Mode";
+        }
+
+        // Toggle theme
+        darkModeToggle.addEventListener("click", function () {
+
+            document.body.classList.toggle("dark-mode");
+
+            if (document.body.classList.contains("dark-mode")) {
+
+                icon.className = "bi bi-sun-fill";
+                text.textContent = "Light Mode";
+
+                localStorage.setItem("theme", "dark");
+
+            } else {
+
+                icon.className = "bi bi-moon-fill";
+                text.textContent = "Dark Mode";
+
+                localStorage.setItem("theme", "light");
+            }
+        });
+
+        // share option
+        //to share link of image
+        // async function shareImage(button) {
+        //     const imageCard = button.parentElement;
+        //     const image = imageCard.querySelector("img");
+
+        //     const imageUrl = image.src;
+        //     const title = image.alt || "Pencils & Pixels";
+
+        //     if (navigator.share) {
+        //         try {
+        //             await navigator.share({
+        //                 title: title,
+        //                 text: "Check out this artwork from Pencils & Pixels!",
+        //                 url: imageUrl
+        //             });
+        //         } catch (error) {
+        //             if (error.name !== "AbortError") {
+        //                 console.error("Sharing failed:", error);
+        //             }
+        //         }
+        //     } else {
+        //         try {
+        //             await navigator.clipboard.writeText(imageUrl);
+        //             alert("Image link copied! You can share it now.");
+        //         } catch (error) {
+        //             window.prompt("Copy this image link:", imageUrl);
+        //         }
+        //     }
+        // }
+
+        //to share image directly
+
+        async function shareImage(button) {
+            const imageCard = button.parentElement;
+            const image = imageCard.querySelector("img");
+
+            const imageUrl = image.currentSrc || image.src;
+            const title = image.alt || "Pencils & Pixels";
+
+            try {
+                const response = await fetch(imageUrl);
+
+                if (!response.ok) {
+                    throw new Error("Unable to fetch image");
+                }
+
+                const blob = await response.blob();
+
+                const extension = blob.type.split("/")[1] || "jpg";
+                const file = new File(
+                    [blob],
+                    `${title.replace(/[^a-z0-9]/gi, "_")}.${extension}`,
+                    { type: blob.type || "image/jpeg" }
+                );
+
+                if (
+                    navigator.canShare &&
+                    navigator.canShare({ files: [file] })
+                ) {
+                    await navigator.share({
+                        title: title,
+                        text: "Check out this artwork from Pencils & Pixels!",
+                        files: [file]
+                    });
+                } else {
+                    await navigator.clipboard.writeText(imageUrl);
+                    alert("Direct image sharing isn't supported here. Image link copied!");
+                }
+            } catch (error) {
+                if (error.name !== "AbortError") {
+                    console.error("Image sharing failed:", error);
+                    alert("Couldn't share the image directly. Please try again.");
+                }
+            }
+        }
+
+
+        //like btn   
+        // document.querySelectorAll(".like-btn").forEach((btn) => {
+        //     // Find the image card containing this button
+        //     const card = btn.closest(".image-card") ||
+        //                  btn.parentElement;
+
+        //     const img = card.querySelector("img");
+
+        //     // Use the image URL as its unique storage key
+        //     const key = "pencils-pixels-like-" +
+        //                 (img?.getAttribute("src") || "");
+
+        //     const heart = btn.querySelector(".heart");
+        //     const text = btn.querySelector(".like-text");
+
+        //     function updateLike(liked) {
+        //         btn.classList.toggle("liked", liked);
+        //         btn.setAttribute("aria-pressed", String(liked));
+        //         heart.textContent = liked ? "♥" : "♡";
+        //         text.textContent = liked ? "Liked" : "Like";
+        //     }
+
+        //     updateLike(localStorage.getItem(key) === "true");
+
+        //     btn.addEventListener("click", () => {
+        //         const liked = localStorage.getItem(key) !== "true";
+
+        //         localStorage.setItem(key, String(liked));
+        //         updateLike(liked);
+        //     });
+        // });
+
+
+    </script>
+
+</body>
+
+</html>
